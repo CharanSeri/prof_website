@@ -15,11 +15,11 @@
 <body>
 
     <div id="header" class="p-5 flex justify-between inline-block align-middle">
-        <div class="-mt-2">
+        <div class="-mt-2 portfolioHeader text-lg">
             <h1 class="rotateName">Charan's</h1>
             <h2 class="rotateType">Portfolio</h2>
         </div>
-        <div class="flex gap-4">
+        <div class="flex gap-4 text-lg">
             <a>Certificates</a>
             <a>Projects</a>
             <a>About</a>
@@ -30,43 +30,74 @@
 
         <div id="certificates">
 
-            <h2 class="underline">Certificates</h2>
-
+            <div class="underline text-3xl">Certificates</div>
 
             <div id="listOfCertificates" class="my-5 grid grid-cols-3 gap-4">
 
-
-                <div class="certificate min-h-11 max-h-11 rounded-lg bg-gradient-to-r from-purple-500 to-pink-500 p-1">
-                    <img src="./images/az-900.png" class="h-full w-auto rounded-lg"/>
-    
+                <div id="azCertificate"
+                    class="certificate  min-h-11 max-h-11 rounded-lg bg-gradient-to-r from-purple-500 to-pink-500 p-1">
+                    <img src="./images/az-900.png" class="h-full w-auto rounded-lg" />
                 </div>
 
-                <div class="certificate min-h-11 max-h-11 rounded-lg bg-gradient-to-r from-purple-500 to-pink-500 p-1">
-                    <img src="./images/dp-100.png" class="h-full w-auto rounded-lg"/>
-    
+                <div id="dpCertificate"
+                    class="certificate min-h-11 max-h-11 rounded-lg bg-gradient-to-r from-purple-500 to-pink-500 p-1">
+                    <img src="./images/dp-100.png" class="h-full w-auto rounded-lg" />
                 </div>
 
-                <div class="certificate min-h-11 max-h-11 rounded-lg bg-gradient-to-r from-purple-500 to-pink-500 p-1">
-                    <img src="./images/python_certification.png" class="h-full w-auto rounded-lg"/>
-    
+                <div id="pythonCertificate"
+                    class="certificate min-h-11 max-h-11 rounded-lg bg-gradient-to-r from-purple-500 to-pink-500 p-1">
+                    <img src="./images/python_certification.png" class="h-full w-auto rounded-lg" />
                 </div>
 
-                <div class="certificate min-h-11 max-h-11 rounded-lg bg-gradient-to-r from-purple-500 to-pink-500 p-1">
-                    <img src="./images/asp web app.png" class="h-full w-auto rounded-lg"/>
-    
+                <div id="aspCertificate"
+                    class="certificate min-h-11 max-h-11 rounded-lg bg-gradient-to-r from-purple-500 to-pink-500 p-1">
+                    <img src="./images/asp web app.png" class="h-full w-auto rounded-lg" />
                 </div>
 
-                <div class="certificate min-h-11 max-h-11 rounded-lg bg-gradient-to-r from-purple-500 to-pink-500 p-1">
+                <div id="agileCertificate"
+                    class="certificate min-h-11 max-h-11 rounded-lg bg-gradient-to-r from-purple-500 to-pink-500 p-1">
                     <img src="./images/agile project managment.png" class="h-full w-auto rounded-lg" />
-    
                 </div>
+
             </div>
 
-           
+
 
         </div>
 
-        <div id="Projects">
+
+        <div class="underline text-3xl">Projects</div>
+
+        <div id="projects">
+
+
+
+            <div id="cardsContainer">
+                <div class="card">
+                    <div class="cardBorder"></div>
+                    <div class="cardContent"></div>
+                </div>
+                <div class="card">
+                    <div class="cardBorder"></div>
+                    <div class="cardContent"></div>
+                </div>
+                <div class="card">
+                    <div class="cardBorder"></div>
+                    <div class="cardContent"></div>
+                </div>
+                <div class="card">
+                    <div class="cardBorder"></div>
+                    <div class="cardContent"></div>
+                </div>
+                <div class="card">
+                    <div class="cardBorder"></div>
+                    <div class="cardContent"></div>
+                </div>
+                <div class="card">
+                    <div class="cardBorder"></div>
+                    <div class="cardContent"></div>
+                </div>
+            </div>
 
         </div>
 
@@ -77,7 +108,7 @@
     </div>
 
 
-    <script src="main.js"></script>
+    <script src="./main.js"></script>
 </body>
 
 </html>
