@@ -26,23 +26,75 @@ a {
   transform: rotate(1.5deg);
 }
 
+#certificatesContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  width: 100%;
+  margin: 10px;
+}
+
+.certificateDiv {
+  background-image: linear-gradient(to right, purple, pink);
+  border-radius: 10px;
+  cursor: pointer;
+  height: 260px;
+  position: relative;
+  width: 300px;
+}
+
+.certificateImageHolder:hover {
+  transform: scale(.99);
+}
+
+.certificateImageHolder {
+  position: absolute;
+  border-radius: inherit;
+  background-color: black;
+  top: 1px;
+  left: 1px;
+  height: calc(100% - 2px);
+  width: calc(100% - 2px);
+}
+
+
 #azCertificate {
+  background-image: url("./images/az-900.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
   animation: fadeIn 1s;
 }
 
 #dpCertificate {
+  background-image: url("./images/dp-100.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
   animation: fadeIn 1s 100ms;
 }
 
 #pythonCertificate {
+  background-image: url("./images/asp\ web\ app.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
   animation: fadeIn 1s 200ms;
 }
 
 #aspCertificate {
+  background-image: url("./images/python_certification.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
   animation: fadeIn 1s 300ms;
 }
 
 #agileCertificate {
+  background-image: url("./images/agile\ project\ managment.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
   animation: fadeIn 1s 400ms;
 }
 
@@ -60,11 +112,10 @@ a {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
-  max-width: 922px;
   width: 100%
 }
 
-#cardsContainer:hover > .card > .cardBorder {
+#cardsContainer:hover>.card>.cardBorder {
   opacity: 1;
 }
 
@@ -73,17 +124,16 @@ a {
   border-radius: 10px;
   cursor: pointer;
   height: 260px;
- position: relative;
+  position: relative;
   width: 300px;
 }
 
-.card:hover::before{
-opacity: 1;
+.card:hover::before {
+  opacity: 1;
 }
 
 .card::before,
-.card > .cardBorder {
-
+.card>.cardBorder {
   border-radius: inherit;
   content: "";
   height: 100%;
@@ -98,26 +148,22 @@ opacity: 1;
 
 .card::before {
 
-  background: radial-gradient(
-    800px circle at var(--mouse-x) var(--mouse-y),
-     rgba(255,255,255,0.6),
-     transparent 40%
- );
+  background: radial-gradient(800px circle at var(--mouse-x) var(--mouse-y),
+      rgba(255, 255, 255, 0.1),
+      transparent 40%);
 
- z-index: 3;
+  z-index: 3;
 }
 
-.card > .cardBorder {
-  background: radial-gradient(
-    400px circle at var(--mouse-x) var(--mouse-y),
-     rgba(255,255,255,0.3),
-     transparent 40%
- );
- z-index: 1;
+.card>.cardBorder {
+  background: radial-gradient(400px circle at var(--mouse-x) var(--mouse-y),
+      rgba(255, 255, 255, 0.3),
+      transparent 40%);
+  z-index: 1;
 }
 
 
-.card > .cardContent {
+.card>.cardContent {
   background-color: rgb(23, 23, 23);
   border-radius: inherit;
   margin: 1px;
@@ -125,6 +171,13 @@ opacity: 1;
   width: calc(100% - 2px);
   position: relative;
   z-index: 2;
+  padding: 15px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cardContent:hover {
+  color: black;
 }
 
 
