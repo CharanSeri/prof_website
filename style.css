@@ -62,8 +62,8 @@ body::-webkit-scrollbar-button {
 }
 
 #landingPage {
-  display: flex;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: 1fr 1fr ;
   align-items: center;
   height: 88vh;
   opacity: 0;
@@ -74,12 +74,16 @@ body::-webkit-scrollbar-button {
   font-size: 5rem;
 }
 
+#greetings {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 #technologies {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
-  justify-content: space-between;
-  align-items: start;
 }
 
 
@@ -89,6 +93,18 @@ body::-webkit-scrollbar-button {
   gap: 8px;
   width: 100%;
   margin: 10px;
+}
+
+.techologiesImageContainer {
+  height: 80px;
+  width: 120px;
+}
+
+.techologiesImageContainer img {
+  display: block;
+  height: 80%;
+  width: auto;
+  margin: auto;
 }
 
 .certificateDiv {
