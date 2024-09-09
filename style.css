@@ -5,6 +5,22 @@
 
 }
 
+/* hide page scrollbar */
+html {
+  scrollbar-width: none;
+}
+
+body {
+  -ms-overflow-style: none;
+}
+
+body::-webkit-scrollbar,
+body::-webkit-scrollbar-button {
+  display: none;
+}
+
+/* end hide page scrollbar */
+
 .acme-regular {
   font-family: "Acme", sans-serif;
   font-weight: 400;
@@ -15,6 +31,8 @@
   display: grid;
   grid-template-columns: 2fr 1fr;
   padding: 20px;
+  transform: translateY(-100%);
+  animation: slideIn 1s forwards;
 }
 
 
@@ -48,6 +66,8 @@
   justify-content: space-around;
   align-items: center;
   height: 88vh;
+  opacity: 0;
+  animation: fadeIn 2.5s forwards;
 }
 
 #landingPage p {
@@ -57,6 +77,7 @@
 #technologies {
   display: flex;
   flex-wrap: wrap;
+  gap: 8px;
   justify-content: space-between;
   align-items: start;
 }
@@ -231,4 +252,12 @@
   100% {
     opacity: 1;
   }
+}
+
+@keyframes slideIn {
+
+  100% {
+    transform: translateY(0%);
+  }
+
 }
