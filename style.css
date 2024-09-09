@@ -11,20 +11,56 @@
   font-style: normal;
 }
 
-a {
-  text-decoration: none;
-  cursor: pointer;
+#header {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  padding: 20px;
 }
 
-.portfolioHeader:hover .rotateName {
-  cursor: pointer;
-  transform: rotate(-2deg);
+
+.rotateType,
+.rotateName {
+  display: inline-block;
 }
 
 .portfolioHeader:hover .rotateType {
   cursor: pointer;
-  transform: rotate(1.5deg);
+  transform: rotate(-1deg);
 }
+
+.portfolioHeader:hover .rotateName {
+  cursor: pointer;
+  transform: rotate(2deg);
+}
+
+.headerLinksContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.links:hover {
+  transform: scale(1.1);
+}
+
+#landingPage {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 88vh;
+}
+
+#landingPage p {
+  font-size: 5rem;
+}
+
+#technologies {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: start;
+}
+
 
 #certificatesContainer {
   display: flex;
@@ -55,46 +91,34 @@ a {
   left: 1px;
   height: calc(100% - 2px);
   width: calc(100% - 2px);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 
 #azCertificate {
   background-image: url("./images/az-900.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
   animation: fadeIn 1s;
 }
 
 #dpCertificate {
   background-image: url("./images/dp-100.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
   animation: fadeIn 1s 100ms;
 }
 
 #pythonCertificate {
   background-image: url("./images/asp\ web\ app.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
   animation: fadeIn 1s 200ms;
 }
 
 #aspCertificate {
   background-image: url("./images/python_certification.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
   animation: fadeIn 1s 300ms;
 }
 
 #agileCertificate {
   background-image: url("./images/agile\ project\ managment.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
   animation: fadeIn 1s 400ms;
 }
 
