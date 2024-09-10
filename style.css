@@ -2,7 +2,12 @@
   background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%);
   color: aliceblue;
   font-family: Acme;
+}
 
+.acme-regular {
+  font-family: "Acme", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 /* hide page scrollbar */
@@ -21,11 +26,7 @@ body::-webkit-scrollbar-button {
 
 /* end hide page scrollbar */
 
-.acme-regular {
-  font-family: "Acme", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
+
 
 #header {
   display: grid;
@@ -63,7 +64,7 @@ body::-webkit-scrollbar-button {
 
 #landingPage {
   display: grid;
-  grid-template-columns: 1fr 1fr ;
+  grid-template-columns: 1fr 1fr;
   align-items: center;
   height: 88vh;
   opacity: 0;
@@ -83,6 +84,7 @@ body::-webkit-scrollbar-button {
 #technologies {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 8px;
 }
 
@@ -107,13 +109,35 @@ body::-webkit-scrollbar-button {
   margin: auto;
 }
 
-.certificateDiv {
+.certificateDivHidden {
   background-image: linear-gradient(to right, purple, pink);
   border-radius: 10px;
   cursor: pointer;
   height: 260px;
   position: relative;
   width: 300px;
+  opacity: 0;
+  filter: blur(5px);
+  transition: all 1s;
+}
+
+.certificateDivHidden:nth-child(2) {
+  transition-delay: 200ms;
+}
+
+
+.certificateDivHidden:nth-child(3) {
+  transition-delay: 400ms;
+}
+
+
+.certificateDivHidden:nth-child(4) {
+  transition-delay: 600ms;
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
 }
 
 .certificateImageHolder:hover {
@@ -134,29 +158,25 @@ body::-webkit-scrollbar-button {
 }
 
 
+
 #azCertificate {
   background-image: url("./images/az-900.png");
-  animation: fadeIn 1s;
 }
 
 #dpCertificate {
   background-image: url("./images/dp-100.png");
-  animation: fadeIn 1s 100ms;
 }
 
 #pythonCertificate {
   background-image: url("./images/asp\ web\ app.png");
-  animation: fadeIn 1s 200ms;
 }
 
 #aspCertificate {
   background-image: url("./images/python_certification.png");
-  animation: fadeIn 1s 300ms;
 }
 
 #agileCertificate {
   background-image: url("./images/agile\ project\ managment.png");
-  animation: fadeIn 1s 400ms;
 }
 
 
