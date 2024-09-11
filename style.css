@@ -80,7 +80,7 @@ body::-webkit-scrollbar-button {
 
 #landingPage {
   display: grid;
-  grid-template-columns: 2fr 2fr;
+  grid-template-columns: 1fr 1fr;
   height: 88vh;
   opacity: 0;
   animation: fadeIn 2.5s forwards;
@@ -94,7 +94,6 @@ body::-webkit-scrollbar-button {
   display: flex;
   align-items: center;
   justify-content: center;
-
 }
 
 #technologies {
@@ -104,6 +103,7 @@ body::-webkit-scrollbar-button {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  gap:50px;
 }
 
 
@@ -113,6 +113,7 @@ body::-webkit-scrollbar-button {
   text-align: center;
   position: relative;
 }
+
 .blob img {
   position: absolute;
   top: 20px;
@@ -332,6 +333,34 @@ body::-webkit-scrollbar-button {
 @keyframes orbitin {
   100% {
     rotate: 1turn;
+  }
+
+}
+
+@media only screen and (max-width: 600px) {
+
+  #header {
+    font-size: medium;
+      grid-template-columns: 1fr 2fr;
+  }
+
+  #landingPage {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #greetings div {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  #technologies {
+    gap:10px;
+  }
+
+  #landingPage p {
+    font-size: 2rem;
   }
 
 }
