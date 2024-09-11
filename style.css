@@ -339,7 +339,7 @@ body::-webkit-scrollbar-button {
 
 }
 
-@media only screen and (max-width: 600px) {
+@media  (max-width: 620px) {
 
   #header {
     font-size: medium;
@@ -370,4 +370,16 @@ body::-webkit-scrollbar-button {
     font-size: 2rem;
   }
 
+}
+
+@media  (max-width: 800px) {
+
+  #greetings {
+    margin: 0;
+  }
+
+  #technologies{
+    gap: 0px;
+    margin: 0;
+  }
 }
