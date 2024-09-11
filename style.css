@@ -2,6 +2,15 @@
   background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%);
   color: aliceblue;
   font-family: Acme;
+  --green: hsl(123, 47%, 74%);
+  --blue: hsl(210, 47%, 74%);
+  --orange: hsl(34, 93%, 77%);
+  --purple: hsl(231, 44%, 76%);
+  --yellow: hsl(54, 76%, 79%);
+  --brown: hsl(20, 41%, 69%);
+  --red: hsl(0, 59%, 76%);
+  --pink: hsl(295, 42%, 72%);
+  --white: hsl(0, 0%, 100%);
 }
 
 .acme-regular {
@@ -34,6 +43,13 @@ body::-webkit-scrollbar-button {
   padding: 20px;
   transform: translateY(-100%);
   animation: slideIn 1s forwards;
+  font-size: larger;
+}
+
+.subHeader {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  font-size: x-large;
 }
 
 
@@ -64,8 +80,7 @@ body::-webkit-scrollbar-button {
 
 #landingPage {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
+  grid-template-columns: 2fr 2fr;
   height: 88vh;
   opacity: 0;
   animation: fadeIn 2.5s forwards;
@@ -79,15 +94,39 @@ body::-webkit-scrollbar-button {
   display: flex;
   align-items: center;
   justify-content: center;
+
 }
 
 #technologies {
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 8px;
+  align-items: center;
 }
 
+
+.blob {
+  height: 100px;
+  width: 100px;
+  text-align: center;
+  position: relative;
+}
+.blob img {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.blob svg {
+  display: block;
+  margin: auto;
+}
+
+.blob:hover {
+  transform: scale(1.1);
+}
 
 #certificatesContainer {
   display: flex;
@@ -95,18 +134,6 @@ body::-webkit-scrollbar-button {
   gap: 8px;
   width: 100%;
   margin: 10px;
-}
-
-.techologiesImageContainer {
-  height: 80px;
-  width: 120px;
-}
-
-.techologiesImageContainer img {
-  display: block;
-  height: 80%;
-  width: auto;
-  margin: auto;
 }
 
 .certificateDivHidden {
@@ -186,7 +213,7 @@ body::-webkit-scrollbar-button {
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  margin-top: 2rem;
+  margin: 10px;
 }
 
 #cardsContainer {
@@ -261,6 +288,10 @@ body::-webkit-scrollbar-button {
   color: black;
 }
 
+#about p {
+  margin: 10px;
+  font-size: x-large;
+}
 
 @keyframes wiggle {
 
@@ -294,6 +325,13 @@ body::-webkit-scrollbar-button {
 
   100% {
     transform: translateY(0%);
+  }
+
+}
+
+@keyframes orbitin {
+  100% {
+    rotate: 1turn;
   }
 
 }
