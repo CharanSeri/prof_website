@@ -25,9 +25,44 @@ certificateContainers.forEach((el) =>
     observer.observe(el)
 )
 
-function handleCardClick (e) {
-console.log(e)
+function handleCardClick(e) {
+    redirectToGit(e.id)
 }
 
-const cards = document.querySelectorAll(".cardContent")
-cards.forEach((el) => el.addEventListener("click",handleCardClick(el)))
+function redirectToGit(e) {
+
+    switch (e) {
+        case "localWebiste":
+            console.log("Local website")
+            window.location.href="https://github.com/CharanSeri/slattRoofingwebsite"
+            break;
+        case "enerpikClient":
+            console.log("Local enerpikClient")
+            break;
+        case "huluClone":
+            console.log("Local huluClone")
+            window.location.href="https://github.com/CharanSeri/hulu_Clone"
+            break;
+        case "spotifyClone":
+            console.log("Local spotifyClone")
+            window.location.href="https://github.com/CharanSeri/spotify-Clone"
+            break;
+        case "chromeExtension":
+            console.log("Local chromeExtension")
+            break;
+        case "giftIdea":
+            console.log("Local giftIdea")
+            window.location.href="https://github.com/CharanSeri/Fire-Giftr";
+            break;
+        case "towerDefence":
+            console.log("Local towerDefence")
+            window.location.href="https://github.com/CharanSeri/tower-Defence"
+            break;
+        default:
+            "No link"
+    }
+
+}
+
+const cards = document.querySelectorAll(".card")
+cards.forEach((el) => el.addEventListener("click", () => handleCardClick(el)))
