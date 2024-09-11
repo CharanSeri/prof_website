@@ -94,6 +94,7 @@ body::-webkit-scrollbar-button {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-right: -7rem;
 }
 
 #technologies {
@@ -104,6 +105,7 @@ body::-webkit-scrollbar-button {
   justify-content: center;
   align-items: center;
   gap:50px;
+  margin-left: -7rem;
 }
 
 
@@ -349,6 +351,10 @@ body::-webkit-scrollbar-button {
     flex-direction: column;
   }
 
+  #greetings {
+    margin-right: 0;
+  }
+
   #greetings div {
     display: flex;
     flex-direction: row;
@@ -357,6 +363,7 @@ body::-webkit-scrollbar-button {
 
   #technologies {
     gap:10px;
+    margin-left: 0;
   }
 
   #landingPage p {
