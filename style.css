@@ -284,16 +284,31 @@ body::-webkit-scrollbar-button {
   z-index: 2;
   padding: 15px;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
 }
+
+.cardDescription{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  justify-content: end;
+}
+
 
 .cardContent:hover {
   color: black;
 }
 
+
 #about p {
   margin: 10px;
   font-size: x-large;
+}
+
+.socialLinks {
+  display: flex;
+  gap: 10px;
 }
 
 @keyframes wiggle {

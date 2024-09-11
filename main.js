@@ -24,3 +24,10 @@ const certificateContainers = document.querySelectorAll('.certificateDivHidden')
 certificateContainers.forEach((el) =>
     observer.observe(el)
 )
+
+function handleCardClick (e) {
+console.log(e)
+}
+
+const cards = document.querySelectorAll(".cardContent")
+cards.forEach((el) => el.addEventListener("click",handleCardClick(el)))
