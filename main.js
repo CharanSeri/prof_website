@@ -34,29 +34,33 @@ function redirectToGit(e) {
     switch (e) {
         case "localWebiste":
             console.log("Local website")
-            window.location.href="https://github.com/CharanSeri/slattRoofingwebsite"
+            window.location.href = "https://github.com/CharanSeri/slattRoofingwebsite"
             break;
         case "enerpikClient":
             console.log("Local enerpikClient")
             break;
         case "huluClone":
             console.log("Local huluClone")
-            window.location.href="https://github.com/CharanSeri/hulu_Clone"
+            window.location.href = "https://github.com/CharanSeri/hulu_Clone"
             break;
         case "spotifyClone":
             console.log("Local spotifyClone")
-            window.location.href="https://github.com/CharanSeri/spotify-Clone"
+            window.location.href = "https://github.com/CharanSeri/spotify-Clone"
             break;
         case "chromeExtension":
             console.log("Local chromeExtension")
             break;
         case "giftIdea":
             console.log("Local giftIdea")
-            window.location.href="https://github.com/CharanSeri/Fire-Giftr";
+            window.location.href = "https://github.com/CharanSeri/Fire-Giftr";
             break;
         case "towerDefence":
             console.log("Local towerDefence")
-            window.location.href="https://github.com/CharanSeri/tower-Defence"
+            window.location.href = "https://github.com/CharanSeri/tower-Defence"
+            break;
+        case "easyLifeFindsWebsie":
+            console.log("Local towerDefence")
+            window.location.href = "https://github.com/EasyLifeFinds/easyLifeFindsApplication"
             break;
         default:
             "No link"
