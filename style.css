@@ -187,7 +187,9 @@ body::-webkit-scrollbar-button {
   background-size: contain;
 }
 
-
+#azAdminCertificate{
+  background-image: url("./images/AZ104.png");
+}
 
 #azCertificate {
   background-image: url("./images/az-900.png");
